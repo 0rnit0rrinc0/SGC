@@ -1,0 +1,367 @@
+body {
+  margin: 0;
+}
+
+.display{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.scrollmenu .user {
+  text-align: right;
+  position: inherit;
+  margin-top: 0px;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+
+  color: white;
+}
+.header-right-text {
+  padding-right: 5px;
+  padding-top: 20px;
+  float: right;
+  text-align: center;
+  color: white;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 700px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* //////////////////// */
+
+.scrollmenu a.cerrar {
+  background-color: lightcoral;
+}
+
+div.scrollmenu {
+  background-color: rgb(30, 92, 164);
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  font-size: 18px;
+  line-height: 62px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #629c87;
+}
+
+/* Active/current link */
+.scrollmenu a.active {
+  background-color: #04aa6d;
+  color: white;
+  size: 100%;
+}
+
+.botones {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.registrar {
+  background-color: #04aa6d;
+  color: white;
+  margin-left: 350px;
+  margin-top: 150px;
+  height: 55px;
+  width: 300px;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 24px;
+  /* border-radius: 50%; */
+}
+
+.listado {
+  background-color: #04aa6d;
+  color: white;
+  margin-left: 20px;
+  height: 55px;
+  width: 300px;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 24px;
+  /* border-radius: 50%; */
+}
+.subir {
+  background-color: #04aa6d;
+  color: white;
+  margin-left: 20px;
+  height: 55px;
+  width: 300px;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 24px;
+  /* border-radius: 50%; */
+}
+
+.round {
+  border-radius: 50%;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add padding to containers */
+.container {
+  border-radius: 10px;
+  background-color: #bebebe;
+  padding: 20px;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+select {
+  width: 99%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* .ip{
+width: 70px;
+} */
+
+.separador {
+  padding-top: 10px;
+  color: black;
+  font-size: 40px;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+*/ input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtng {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtnm {
+  background-color: #575757;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.iptabla {
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+.tabla.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link_edit{
+	color: #0ca4ce;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Set a style for the submit/register button */
+.registerbtng {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn {
+  background-color: #575757;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.invalid {
+  background:url(../img/error.png) no-repeat 0 50%;
+  background-size:20px;
+  padding-left:35px;
+  padding-right: 20px;
+  line-height:24px;
+  color:#ec3f41;
+}
+.valid {
+  background:url(../img/check.png) no-repeat 0 50%;
+  background-size:20px;
+  padding-left:35px;
+  padding-right: 20px;
+  line-height:24px;
+  color:#3a7d34;
+}

@@ -1,0 +1,21 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://morapps.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://morapps.cl$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://sgc.morapps.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://sgc.morapps.cl$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.morapps.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.morapps.cl$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.sgc.morapps.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.sgc.morapps.cl$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://morapps.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://morapps.cl$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://sgc.morapps.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://sgc.morapps.cl$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.morapps.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.morapps.cl$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.sgc.morapps.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.sgc.morapps.cl$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
